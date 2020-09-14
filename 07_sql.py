@@ -9,9 +9,9 @@ with sqlite3.connect("new.db") as connection:
     'count': "SELECT count(city) FROM population"}
     # run each sql query item in the dictionary
     for keys, values in sql.items():
-    # run sql
-    c.execute(values)
-    # fetchone() retrieves one record from the query
-    result = c.fetchone()
-    # output the result to screen
-    print(keys + ":", result[0])
+        # run sql
+        c.execute(values)
+        # fetchone() retrieves one record from the query
+        result = c.fetchone()
+        # output the result to screen
+        print(keys + ":", result[0])
